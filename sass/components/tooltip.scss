@@ -1,0 +1,76 @@
+.tooltip {
+    position: relative;
+
+    &:after{
+        position: absolute;
+        right: -16px;
+        top: 0;
+        transform: translate(0, calc(-100% - 6px));
+        // content: "";
+        min-width: 220px;
+        max-width: 320px;
+        background-color: $tooltip;
+        color: white;
+        padding: 8px 20px;
+        border-radius: 6px;
+        opacity: 0;
+        z-index: -1;
+        transition: 0.5s 0.3s;
+    }
+
+    &:hover:after{
+        opacity: 1;
+        z-index: 0;
+        transition: opacity 0.3s 0.3s;
+    }
+    &:focus:after{
+        opacity: 1;
+        z-index: 0;
+        transition: opacity 0.3s 0.3s;
+    }
+
+    &:before{
+        position: absolute;
+        border: solid;
+        border-color: $tooltip transparent;
+        border-width: 6px 6px 0 6px;
+        content: "";
+        right: 50%;
+        top: -6px;
+        transform: translate(50%, 0);
+        opacity: 0;
+        z-index: -1;
+        transition: 0.5s 0.3s;
+    }
+
+    &:hover::before{
+        opacity: 1;
+        z-index: 0;
+        transition: opacity 0.3s 0.3s;
+    }
+    &:focus:before{
+        opacity: 1;
+        z-index: 0;
+        transition: opacity 0.3s 0.3s;
+    }
+
+    &_edit:after {
+        content: "Редагувати нотаріуса";
+    }
+
+    &_block:after {
+        content: "Профіль користувача заблоковано";
+    }
+
+    &_active:after {
+        content: "Профіль користувача активовано";
+    }
+
+    &_lock:after {
+        content: "Заблокувати користувача";
+    }
+
+    &_unlock:after {
+        content: "Активувати користувача";
+    }
+}

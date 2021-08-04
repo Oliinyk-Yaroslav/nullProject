@@ -1,0 +1,105 @@
+//text-color
+
+.text-white {
+    color: white;
+}
+
+.text-black {
+    color: black;
+}
+
+.text-green {
+    color: $text-green;
+}
+
+.text-supportive {
+    color: $text-supportive;
+}
+
+.text-primary {
+    color: $text-primary;
+}
+
+.text-primary-blue {
+    color: $text-primary-blue;
+}
+
+//font-size
+
+.fs-xs {
+    font-size: $font-size-10;
+    line-height: $font-size-16;
+}
+
+.fs-sm {
+    font-size: $font-size-14;
+    line-height: $font-size-20;
+}
+
+.fs-md {
+    font-size: $font-size-16;
+    line-height: $font-size-24;
+}
+
+.fs-lg {
+    font-size: $font-size-16;
+    line-height: $font-size-24;
+
+    @media screen and (min-width: $screen-sm-min) {
+        font-size: $font-size-20;
+        line-height: $font-size-24;
+    }
+}
+
+.fs-xl {
+    font-size: $font-size-20;
+    line-height: $font-size-24;
+
+    @media screen and (min-width: $screen-sm-min) {
+        font-size: $font-size-24;
+        line-height: $font-size-32;
+    }
+}
+
+.fs-xxl {
+    font-size: $font-size-24;
+    line-height: $font-size-32;
+
+    @media screen and (min-width: $screen-sm-min) {
+        font-size: $font-size-32;
+        line-height: $font-size-40;
+    }
+}
+
+//text-weight
+
+.fw-bold {
+    font-weight: $font-bold;
+}
+
+//text-align
+
+.text-center {
+    text-align: center;
+}
+
+.text-end {
+    text-align: end;
+}
+
+//number of text rows
+
+.text-4-rows {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+.text-decoration-none {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+    }
+}

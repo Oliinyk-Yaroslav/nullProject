@@ -1,0 +1,43 @@
+$primary: #2AB181;
+$primary-shade: #1a347a;
+$accent: #ffdf17;
+$primary-text: #161616;
+$primary-text-blue: #1B1A57;
+$placeholder-text: #A8A8A8;
+$supportive-text: #677382;
+$fields: #F9F9F9;
+$border: #8D8D8D;
+$visited-links: #8A3FFC;
+$link: #1e4dba;
+$link-hover: #255fe5;
+$dark-menu: #293042;
+$light-background: #e8f0ff;
+$background-darker: #F4F4F4;
+$default-background: #fff;
+$border-gray: #E0E0E0;
+
+
+//system
+$error: #d8222f;
+$success: #12c283;
+$warning: #F2C94C;
+$info: #498cfc;
+
+//section
+$section-light: $fields; 
+$section-dark: $background-darker;
+
+//text
+$text-white: #fff;
+$text-black: black;
+$text-supportive: $supportive-text;
+$text-green: $primary;
+$text-primary: $primary-text;
+$text-primary-blue: $primary-text-blue;
+
+//button
+
+//border
+$border-lighter: $border-gray;
+$border: $border;
+$border-darker: $supportive-text;

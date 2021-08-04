@@ -1,0 +1,41 @@
+.d {
+    &-flex {
+        display: flex;
+    }
+
+    &-block {
+        display: block;
+    }
+
+    &-block-sm-none {
+        display: block;
+
+        @media screen and (min-width: $screen-sm-min) {
+            display: none;
+        }
+    }
+
+    &-block-sm-flex {
+        display: block;
+
+        @media screen and (min-width: $screen-sm-min) {
+            display: flex;
+        }
+    }
+
+    &-i-block {
+        display: inline-block;
+    }
+
+    &-none {
+        display: none;
+    }
+
+    &-none-sm-block {
+        display: none;
+
+        @media screen and (min-width: $screen-sm-min) {
+            display: block;
+        }
+    }
+}

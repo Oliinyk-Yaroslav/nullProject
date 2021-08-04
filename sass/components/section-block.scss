@@ -1,0 +1,7 @@
+.section-block {
+  padding: 20px 0;
+
+  @media screen and (min-width: $screen-lg-min) {
+    padding: 40px 0;
+  }
+}

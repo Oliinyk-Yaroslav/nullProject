@@ -1,0 +1,93 @@
+.select {
+  position: relative;
+  width: 100%;
+}
+
+.select__selected-item {
+  background: $fields;
+  padding: 8px 16px;
+  border-radius: 2px;
+  border-bottom: 1px solid $border-gray;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &:hover {
+    cursor: pointer;
+    border-color: black;
+  }
+
+  &_table {
+    border-bottom: none;
+    padding: 8px;
+    background: white;
+    justify-content: stretch;
+  }
+}
+
+.select__arrow {
+  transition: 0.3s;
+}
+
+.select__arrow_rotate {
+  transform: rotate(-180deg);
+}
+
+.select__list {
+  border-radius: 4px;
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  z-index: 1;
+  box-sizing: border-box;
+  transition: 0.3s;
+  overflow: auto;
+  max-height: 0;
+  opacity: 0;
+  box-shadow: $box-shadow;
+  
+    &_table {
+      top: calc(100%/* + $border-bottom*/);
+    }
+}
+
+.select__list_opened {
+  max-height: 200px;
+  border-color: $border-gray;
+  opacity: 1;
+}
+
+.select__list-item {
+  padding: 8px 16px;
+  color: $text-supportive;
+  border-bottom: 1px solid $border-gray;
+  background: $fields;
+
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    background: #f9f9f9;
+  }
+
+  &:first-child {
+    border-radius: 2px 2px 0 0;
+  }
+
+  &:last-child {
+    border-bottom: none;
+    border-radius: 0 0 2px 2px;
+  }
+
+  &_table {
+    background: white;
+
+    &:hover {
+      background: white;
+    }
+  }
+}
+
+.select__input {
+  display: none;
+}
